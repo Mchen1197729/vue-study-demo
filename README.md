@@ -1,19 +1,2 @@
-# vue-study-demo
+# vue-study-demo 此项目用于记录一些关于vue的细节点
 
-## Project setup
-```
-npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).

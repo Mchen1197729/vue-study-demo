@@ -1,8 +1,12 @@
 import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
+import axios from 'axios'
+import _ from 'lodash'
 
 Vue.config.productionTip = false
+Vue.prototype.$axios = axios
+Vue.prototype.$lodash = _
 
 new Vue({
   router,
