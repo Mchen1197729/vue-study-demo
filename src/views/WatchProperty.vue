@@ -9,7 +9,6 @@
     <span>{{answer}}</span>
     <div>
       <button @click="sayHi">sayHi</button>
-      <button @click="updateSayHi">改变this.sayHi的值</button>
     </div>
   </div>
 </template>
