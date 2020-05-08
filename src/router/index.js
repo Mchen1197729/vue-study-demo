@@ -47,6 +47,11 @@ const routes = [
     path: '/about-props',
     name: 'AboutPropsDemo',
     component: () => import(/* webpackChunkName: "AboutPropsDemo" */ '../views/AboutPropsDemo')
+  },
+  {
+    path: '/about-sync',
+    name: 'AboutSyncDemo',
+    component: () => import(/* webpackChunkName: "AboutSyncDemo" */ '../views/AboutSyncDemo')
   }
 ]
 

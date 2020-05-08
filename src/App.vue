@@ -8,7 +8,8 @@
       <router-link to="/slot">使用插槽</router-link> |
       <router-link to="/scoped-slot">作用域插槽</router-link> |
       <router-link to="/require-context">批量导入组件</router-link> |
-      <router-link to="/about-props">关于props</router-link>
+      <router-link to="/about-props">关于props</router-link> |
+      <router-link to="/about-sync">关于.sync</router-link>
     </div>
     <router-view/>
   </div>
