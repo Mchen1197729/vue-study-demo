@@ -62,6 +62,11 @@ const routes = [
     path: '/transition',
     name: 'TransitionDemo',
     component: () => import(/* webpackChunkName: "TransitionDemo" */ '../views/TransitionDemo')
+  },
+  {
+    path: '/filters',
+    name: 'FiltersDemo',
+    component: () => import(/* webpackChunkName: "FiltersDemo" */ '../views/FiltersDemo')
   }
 ]
 

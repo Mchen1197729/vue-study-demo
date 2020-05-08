@@ -22,6 +22,8 @@
       <router-link to="/super-sub">组件之间循环引用</router-link>
       |
       <router-link to="/transition">过渡效果</router-link>
+      |
+      <router-link to="/filters">使用过滤器</router-link>
     </div>
     <!--
         使用keep-alive可以缓存路由组件
