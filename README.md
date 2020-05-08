@@ -15,19 +15,20 @@
 
 ### 2.**关于插槽slot的使用**
 >1.slot插槽一般在自定义组件中使用，用来表示某些内容的占位符
-    1.1在自定义组件中使用#来给slot命名
+    1.1在自定义组件中使用name="xxx"来给slot命名
 >2.当自定义组件被父组件使用时，父组件可以传递一些内容来将填充自定义组件中的slot的区域
+   使用template标签来给slot添加内容，使用#xxx来表示填充的位置
 ```vue
 //自定义子组件
 <template>
   <header>
-     <slot #header/>
+     <slot name="header"/>
   </header>
   <main>
-     <slot #default/>
+     <slot name="default"/>
   </main>
   <footer>
-     <slot #footer/>
+     <slot name="footer"/>
   </footer>
 </template>
 ```
