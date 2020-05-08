@@ -26,6 +26,14 @@
   * 4.在v-enter&v-leave-to这两个时间点设置opacity:0
   * */
   export default {
+    //如果该组件被用在keep-alive组件中 当该组件被激活时此生命周期函数被调用
+    activated() {
+      console.log('TransitionDemo activated()')
+    },
+    //如果该组件被用在keep-alive组件中 当该组件被缓存时此生命周期函数被调用
+    deactivated() {
+      console.log('TransitionDemo deactivated()')
+    },
     data() {
       return {
         isShow: true,
@@ -38,6 +46,18 @@
       },
       toggleAnimate() {
         this.isAnimate = !this.isAnimate
+      }
+    },
+    watch: {
+      isShow: {
+        handler(newVal, oldVal) {
+          console.log(newVal)
+        },
+        /*
+        * 1.immediate:true 那么上面定义的handler处理函数会在该组件创建后立刻调用一次
+        * 2.immediate:false 那么上面定义的handler处理函数只会在被侦听的值发生改变以后调用
+        * */
+        immediate: true
       }
     }
   }
