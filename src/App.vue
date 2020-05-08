@@ -11,7 +11,12 @@
       <router-link to="/about-props">关于props</router-link> |
       <router-link to="/about-sync">关于.sync</router-link>
     </div>
-    <router-view/>
+    <!--
+        使用keep-alive可以缓存路由组件
+    -->
+    <keep-alive>
+      <router-view/>
+    </keep-alive>
   </div>
 </template>
 

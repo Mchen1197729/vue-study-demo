@@ -13,7 +13,6 @@
 </template>
 
 <script>
-  import SyncDemo from '../components/SyncDemo'
 
   export default {
     data() {
@@ -22,7 +21,12 @@
       }
     },
     components: {
-      SyncDemo
+      /*
+      * 注册同步组件和异步组件的区别
+      * 1.同步组件：components:{组件名1:组件对象1,...}
+      * 2.异步组件:components:{组件名1:()=>{return 组件对象1;}}
+      * */
+      SyncDemo: () => import('../components/SyncDemo')
     }
   }
 </script>

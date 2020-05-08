@@ -9,6 +9,7 @@
 
 <script>
   export default {
+    name:'SyncDemo',
     props: {
       username: {
         type: String,

@@ -46,3 +46,31 @@
   </template>
 </Sub-Component>
 ```
+
+### 3.**注册同步组件与异步组件**
+>1.同步组件会在根实例创建的时候就一起创建，比较消耗资源
+
+>2.异步组件只会在该组件被激活时才创建，可以减少资源消耗
+
+>3.注册同步全局组件：Vue.component('组件名',组件默认导出的对象)
+   注册同步局部组件：components:{组件名1:组件对象1,...}
+
+>4.注册异步全局组件：Vue.component('组件名‘,()=>{return 组件默认导出的对象})
+   注册异步局部组件：components:{组件名1:()=>{return 组件对象1},...}
+
+>5.处理异步组件的加载状态
+```js
+const AsyncComponent = () => ({
+  // 需要加载的组件 (应该是一个 `Promise` 对象)
+  component: import('./MyComponent.vue'),
+  // 异步组件加载时使用的组件
+  loading: LoadingComponent,
+  // 加载失败时使用的组件
+  error: ErrorComponent,
+  // 展示加载时组件的延时时间。默认值是 200 (毫秒)
+  delay: 200,
+  // 如果提供了超时时间且组件加载也超时了，
+  // 则使用加载失败时使用的组件。默认值是：`Infinity`
+  timeout: 3000
+})
+```
