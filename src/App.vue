@@ -9,7 +9,8 @@
       <router-link to="/scoped-slot">作用域插槽</router-link> |
       <router-link to="/require-context">批量导入组件</router-link> |
       <router-link to="/about-props">关于props</router-link> |
-      <router-link to="/about-sync">关于.sync</router-link>
+      <router-link to="/about-sync">关于.sync</router-link> |
+      <router-link to="/super-sub">组件之间循环引用</router-link>
     </div>
     <!--
         使用keep-alive可以缓存路由组件

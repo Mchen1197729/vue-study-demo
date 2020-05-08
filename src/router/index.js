@@ -52,6 +52,11 @@ const routes = [
     path: '/about-sync',
     name: 'AboutSyncDemo',
     component: () => import(/* webpackChunkName: "AboutSyncDemo" */ '../views/AboutSyncDemo')
+  },
+  {
+    path: '/super-sub',
+    name: 'TreeFileDemo',
+    component: () => import(/* webpackChunkName: "TreeFileDemo" */ '../views/TreeFileDemo')
   }
 ]
 

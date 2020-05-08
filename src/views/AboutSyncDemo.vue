@@ -21,8 +21,8 @@
   export default {
     /*
     * 依赖注入：provide/inject
-    * 1.父组件provide一些数据给任意的子组件
-    * 2.子组件将这些数据inject到组件自身当中,这样子组件就可以使用父组件中的数据了
+    * 1.父组件provide一些数据给任意的后代组件
+    * 2.后代组件将这些数据inject到组件自身当中,这样子组件就可以使用父组件中的数据了
     * */
     provide() {
       return {
