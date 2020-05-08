@@ -13,6 +13,11 @@ Vue.prototype.$lodash = _
 
 
 new Vue({
+  provide() {
+    return {
+      root_name: '根实例'
+    }
+  },
   router,
   render: h => h(App)
 }).$mount('#app')

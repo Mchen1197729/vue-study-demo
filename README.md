@@ -74,3 +74,31 @@ const AsyncComponent = () => ({
   timeout: 3000
 })
 ```
+
+### 4.**关于Vue中的依赖注入**
+>1.依赖注入可以用来解决后代组件使用父级或祖先级别的组件中的数据
+>2.使用方式：
+```js
+//父组件
+export default{
+  provide(){
+    return {
+      super_name:'父组件的名称',
+      super_show(){
+        console.log('I am 父组件')
+      }
+    } 
+  }
+}
+//子组件
+export default{
+  inject:['super_name','super_show'],
+  methods:{
+    m1(){
+      //使用父组件注入的数据
+      console.log(this.super_name)
+      this.super_show()
+    } 
+  }
+}
+```
