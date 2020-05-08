@@ -57,6 +57,11 @@ const routes = [
     path: '/super-sub',
     name: 'TreeFileDemo',
     component: () => import(/* webpackChunkName: "TreeFileDemo" */ '../views/TreeFileDemo')
+  },
+  {
+    path: '/transition',
+    name: 'TransitionDemo',
+    component: () => import(/* webpackChunkName: "TransitionDemo" */ '../views/TransitionDemo')
   }
 ]
 
