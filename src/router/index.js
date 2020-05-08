@@ -42,6 +42,11 @@ const routes = [
     path: '/require-context',
     name: 'RequireContextDemo',
     component: () => import(/* webpackChunkName: "RequireContextDemo" */ '../views/RequireContextDemo')
+  },
+  {
+    path: '/about-props',
+    name: 'AboutPropsDemo',
+    component: () => import(/* webpackChunkName: "AboutPropsDemo" */ '../views/AboutPropsDemo')
   }
 ]
 
