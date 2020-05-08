@@ -37,6 +37,11 @@ const routes = [
     path: '/scoped-slot',
     name: 'ScopedSlotDemo',
     component: () => import(/* webpackChunkName: "ScopedSlotDemo" */ '../views/ScopedSlotDemo')
+  },
+  {
+    path: '/require-context',
+    name: 'RequireContextDemo',
+    component: () => import(/* webpackChunkName: "RequireContextDemo" */ '../views/RequireContextDemo')
   }
 ]
 

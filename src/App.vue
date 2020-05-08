@@ -6,7 +6,8 @@
       <router-link to="/steps">步骤条</router-link> |
       <router-link to="/conditional">条件渲染</router-link> |
       <router-link to="/slot">使用插槽</router-link> |
-      <router-link to="/scoped-slot">作用域插槽</router-link>
+      <router-link to="/scoped-slot">作用域插槽</router-link> |
+      <router-link to="/require-context">批量导入组件</router-link>
     </div>
     <router-view/>
   </div>

@@ -4,13 +4,13 @@
   -->
   <div class="new-slot-item">
     <header>
-      <slot #header/>
+      <slot name="header"/>
     </header>
     <main>
-      <slot #default/>
+      <slot name="default"/>
     </main>
     <footer>
-      <slot #footer/>
+      <slot name="footer"/>
     </footer>
   </div>
 </template>
