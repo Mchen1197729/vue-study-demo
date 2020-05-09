@@ -24,6 +24,8 @@
       <router-link to="/transition">过渡效果</router-link>
       |
       <router-link to="/filters">使用过滤器</router-link>
+      |
+      <router-link to="/vuex-demo">使用Vuex</router-link>
     </div>
     <!--
         使用keep-alive可以缓存路由组件
