@@ -72,6 +72,11 @@ const routes = [
     path: '/vuex-demo',
     name: 'VuexDemo',
     component: () => import(/* webpackChunkName: "VuexDemo" */ '../views/VuexDemo')
+  },
+  {
+    path: '/vuex-module-demo',
+    name: 'VuexModuleDemo',
+    component: () => import(/* webpackChunkName: "VuexModuleDemo" */ '../views/VuexModuleDemo')
   }
 ]
 

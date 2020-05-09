@@ -26,6 +26,8 @@
       <router-link to="/filters">使用过滤器</router-link>
       |
       <router-link to="/vuex-demo">使用Vuex</router-link>
+      |
+      <router-link to="/vuex-module-demo">使用Vuex+Module</router-link>
     </div>
     <!--
         使用keep-alive可以缓存路由组件

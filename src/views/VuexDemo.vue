@@ -8,6 +8,8 @@
       <li v-for="(odd,index) in oddNumbers" :key="index">{{odd}}</li>
     </ul>
     <h1>{{oddNumbersCount}}</h1>
+    <hr>
+    <p>{{todoItem.id}}--{{todoItem.title}}--{{todoItem.completed}}</p>
     <button @click="clickButton">按钮</button>
   </div>
 </template>
@@ -24,14 +26,17 @@
     methods: {
       clickButton() {
         /*
-        *
+        *处理异步action的Promise返回值
+        * 1.this.$store.dispatch()返回的是Promise对象
+        * 2.此写法需要clickButton这个action返回一个状态发生改变的Promise实例
         * */
-        const res = this.$store.dispatch('clickButton')
-        console.log(res)
-        res.then(() => {
-          console.log('success')
-        })
-        console.log('hhhhhhhh')
+        this.$store.dispatch('clickButton')
+            .then(() => {
+              console.log('action success')
+            })
+            .catch(err => {
+              console.error(err)
+            })
       }
     },
     /*
