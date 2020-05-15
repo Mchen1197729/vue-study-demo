@@ -90,7 +90,19 @@ const routes = [
   {
     path: '/router-user/:username',
     name: 'RouterUser',
+    //直接设置props:true->RouterUser组件中可以声明props.username来匹配动态传入的username
     props: true,
+    meta: {
+      requireAuth: true,
+      requireName: true,
+    },
+    component: () => import(/* webpackChunkName: "CHEN" */ '../views/RouterUser')
+  },
+  {
+    path: '/router-user',
+    name: 'RouterUser',
+    //设置为对象模式->RouterUser组件中可以声明props.id来匹配动态传入的id
+    props: route => ({id: route.query.id}),
     meta: {
       requireAuth: true,
       requireName: true,

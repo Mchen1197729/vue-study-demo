@@ -31,6 +31,7 @@
     </div>
     <div id="nav1">
       <button @click="clickButton">响应路由参数的变化</button>
+      <button @click="clickButton2">响应路由参数的变化2</button>
     </div>
     <hr>
     <!--
@@ -75,6 +76,9 @@
               //如果重复跳转到同一个目标地址 则会触发此回调函数
               console.log(err)
             })
+      },
+      clickButton2() {
+        this.$router.push('/router-user?id=12')
       }
     },
   }

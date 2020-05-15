@@ -1,6 +1,6 @@
 <template>
   <div class="router-user">
-    <h1>{{username}}</h1>
+    <h1>{{username||id}}</h1>
   </div>
 </template>
 
@@ -8,6 +8,9 @@
   export default {
     props: {
       username: {
+        type: String
+      },
+      id: {
         type: String
       }
     },
