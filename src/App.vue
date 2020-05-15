@@ -32,6 +32,7 @@
     <div id="nav1">
       <button @click="clickButton">响应路由参数的变化</button>
       <button @click="clickButton2">响应路由参数的变化2</button>
+      <button @click="clickButton3">elementUI页面</button>
     </div>
     <hr>
     <!--
@@ -79,6 +80,9 @@
       },
       clickButton2() {
         this.$router.push('/router-user?id=12')
+      },
+      clickButton3() {
+        this.$router.push('/element')
       }
     },
   }

@@ -108,6 +108,15 @@ const routes = [
       requireName: true,
     },
     component: () => import(/* webpackChunkName: "CHEN" */ '../views/RouterUser')
+  },
+  {
+    path: '/element',
+    name: 'ElementDemo',
+    meta: {
+      requireAuth: true,
+      requireName: true,
+    },
+    component: () => import(/* webpackChunkName: "CHEN" */ '../views/ElementDemo')
   }
 ]
 
