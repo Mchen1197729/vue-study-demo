@@ -5,7 +5,6 @@ import store from './store'
 import axios from 'axios'
 import _ from 'lodash'
 import ElementUI from 'element-ui';
-import 'element-ui/lib/theme-chalk/index.css';
 
 //引入批量导入模块的代码
 import './contexts'
@@ -16,6 +15,7 @@ Vue.prototype.$lodash = _
 Vue.use(ElementUI);
 
 
+console.log(store)
 new Vue({
   provide() {
     return {
